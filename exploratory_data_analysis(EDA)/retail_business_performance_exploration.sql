@@ -1,25 +1,43 @@
 /*
 ===================================================================
-            EXPLORATORY DATA ANALYSIS (EDA) — GOLD LAYER
+                RETAIL BUSINESS PERFORMANCE EXPLORATION
 ===================================================================
-	Purpose:
-	This SQL script performs Exploratory Data Analysis (EDA) on the 
-	Gold layer of the Medallion Architecture data warehouse.
+Purpose:
+This SQL script explores curated data from the Gold Layer of the
+Medallion Architecture (Bronze → Silver → Gold) to generate business
+insights and validate the readiness of analytical datasets.
 
-	Overview:
-	- Uses curated and transformed data from the Gold layer tables 
-	  (dim_customers, dim_products, fact_sales).
-	- Validates data integrity and transformation accuracy from 
-	  Bronze → Silver → Gold stages.
-	- Explores key business dimensions and metrics including 
-	  customers, products, sales, and dates.
-	- Identifies patterns, trends, and top/bottom performers to 
-	  support reporting and decision-making.
+Overview:
+- Analyzes key business dimensions: customers, products, and sales.
+- Validates transformation accuracy and completeness of the Gold Layer.
+- Identifies patterns in revenue, product performance, and customer behavior.
+- Provides a data foundation for reporting, dashboarding, and forecasting.
 
-	Context:
-	Intended for analysts and team members reviewing the warehouse 
-	EDA in the GitHub repository to understand dataset readiness, 
-	data quality, and analytical insights.
+Key Performance Indicators (KPIs) Analyzed:
+  • Total Sales Revenue (SUM of sales_amount)
+  • Total Quantity Sold
+  • Average Selling Price
+  • Total Number of Orders
+  • Total Number of Customers
+  • Customer Age Distribution
+  • Product Category Performance
+  • Revenue by Country, Gender, and Marital Status
+  • Top and Bottom Performing Products and Customers
+  • Sales Coverage Period (First to Last Order Date)
+
+Relevance:
+This analysis supports data-driven decisions across key business units:
+  • Sales Team → Track performance and identify growth regions.
+  • Marketing Team → Segment customers and tailor promotional efforts.
+  • Product Management → Assess product profitability and demand.
+  • Finance Team → Validate revenue and pricing metrics.
+  • Data & Analytics Team → Ensure data accuracy for visualization.
+
+Context:
+Developed after data warehouse completion to confirm Gold Layer quality,
+and to extract actionable insights that align business strategy with 
+verified, analytics-ready data.
+
 ===================================================================
 */
 
